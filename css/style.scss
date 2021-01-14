@@ -1,0 +1,17 @@
+////
+/// @access public
+/// @author Salvador Muñoz Cordero
+/// @group main
+////
+
+///Eliminar margen por defecto
+body,
+.container,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
