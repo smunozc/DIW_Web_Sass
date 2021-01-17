@@ -97,7 +97,7 @@ a {
   width: 50%;
 }
 .container #links a:hover {
-  background-color: #4f3325;
+  background-color: #714936;
 }
 .container main {
   position: relative;
@@ -126,10 +126,11 @@ a {
   width: 120px;
 }
 .container main .texto a:hover {
-  background-color: #4f3325;
+  background-color: #714936;
 }
 .container main .carousel {
   background-color: white;
+  overflow-x: hidden;
 }
 .container main .carousel .carousel_nav {
   display: none;
@@ -138,21 +139,15 @@ a {
   --n: 1;
   display: flex;
   height: 250px;
-  overflow-x: hidden;
   overflow-y: hidden;
   width: 100%;
-  width: calcularAnchuraCarousel(var(--n));
-  transform: translate(calc(var(--i, 0)/var(--n)*-100%));
+  width: calc(var(--n)*(100%));
+  transform: translate(calc(var(--i, 0)/var(--n)*-100% + var(--tx, 0px)));
 }
 .container main .carousel figure img {
-  min-width: 100%;
-  transition: all 1s ease-out;
+  pointer-events: none;
   width: 100%;
-  width: calcularAnchuraCarouselImg(var(--n));
-  -webkit-transition: all 1s ease-out;
-  -moz-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
+  width: calc((100%)/var(--n));
 }
 
 .hide {
@@ -171,20 +166,8 @@ a {
   -o-transform: translateY(0px);
 }
 
-.slide-left {
-  transform: translateZ(-100%);
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-}
-
-.slide-right {
-  transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  -moz-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  -o-transform: translateX(100%);
+.smooth {
+  transition: transform 0.5s ease-out;
 }
 
 /*# sourceMappingURL=style.css.map */

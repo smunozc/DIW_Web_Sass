@@ -21,7 +21,7 @@ p {
 }
 
 ///Eliminar decoración de enlaces por defecto
-a{
+a {
     text-decoration: none;
 }
 
@@ -110,7 +110,8 @@ a{
         -moz-transition: all 0.3s ease-in;
         -ms-transition: all 0.3s ease-in;
         -o-transition: all 0.3s ease-in;
-        a{
+
+        a {
             align-items: center;
             background-color: $color-menu-activo;
             color: $color-fuente-secundario;
@@ -119,35 +120,36 @@ a{
             justify-content: center;
             width: 50%;
         }
-        a:hover{
+
+        a:hover {
             background-color: $color-menu-hover;
         }
     }
 
     ///Main
-    main{
+    main {
         position: relative;
         top: 60px;
         z-index: 0;
 
         ///Sección del main que contiene el texto de bienvenida a la página principal
-        .texto{
+        .texto {
             display: flex;
             flex-direction: column;
             height: 250px;
             padding: 60px 25px;
 
-            p{
+            p {
                 color: $color-fuente-parrafo;
                 font-size: $text-size;
             }
 
             ///Formateo de la palabra clave del texto
-            #keyword{
+            #keyword {
                 font-size: $keyword-size;
             }
 
-            a{
+            a {
                 background-color: $color-menu-activo;
                 color: $color-fuente-secundario;
                 margin-top: 60px;
@@ -155,38 +157,35 @@ a{
                 text-align: center;
                 width: 120px;
             }
-            a:hover{
+
+            a:hover {
                 background-color: $color-menu-hover;
             }
         }
 
         ///Sección del main que contiene el carrusel
-        .carousel{
+        .carousel {
             background-color: $color-fondo-secundario;
-            .carousel_nav{
+            overflow-x: hidden;
+
+            .carousel_nav {
                 display: none;
             }
-            figure{
-                // Número de imágenes que componen el carrusel
+
+            figure {
                 --n: 1;
                 display: flex;
                 height: 250px;
-                overflow-x: hidden;
                 overflow-y: hidden;
                 width: 100%;
-                width: calcularAnchuraCarousel(var(--n));
-                // el valor de --i (actúa como indice de la imagen actual del carrusel) deberá ser mayor o igual a 0 pero siempre más pequeño que el valor de --n (número total de imagenes)
-                transform: translate(calc(var(--i, 0)/var(--n)*-100%));
-
+                width: calc(var(--n)*(100%));
+                transform: translate(calc(var(--i, 0)/var(--n)*-100% + var(--tx, 0px)));
+                
                 img {
-                    min-width: 100%;
-                    transition: all 1s ease-out;
+                    //min-width: 100%;
+                    pointer-events: none;
                     width: 100%;
-                    width: calcularAnchuraCarouselImg(var(--n));
-                    -webkit-transition: all 1s ease-out;
-                    -moz-transition: all 1s ease-out;
-                    -ms-transition: all 1s ease-out;
-                    -o-transition: all 1s ease-out;
+                    width: calc((100%)/var(--n));
                 }
             }
         }
@@ -194,7 +193,7 @@ a{
 }
 
 ///Clase para esconder la parte del menu con links a paginas internas
-.hide{
+.hide {
     transform: translateY(-40px);
     -webkit-transform: translateY(-40px);
     -moz-transform: translateY(-40px);
@@ -203,7 +202,7 @@ a{
 }
 
 ///Clase para mostrar la parte del menu con links a paginas internas
-.show{
+.show {
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
@@ -211,20 +210,7 @@ a{
     -o-transform: translateY(0px);
 }
 
-///Clase para la diapositiva que se mueve hacia la izquierda.
-.slide-left{
-    transform: translateZ(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-}
-
-///Clase para la diapositiva que se mueve hacia la derecha.
-.slide-right{
-    transform: translateX(+100%);
-    -webkit-transform: translateX(+100%);
-    -moz-transform: translateX(+100%);
-    -ms-transform: translateX(+100%);
-    -o-transform: translateX(+100%);
+///Clase para la transición de la diapositiva
+.smooth { 
+    transition: transform .5s ease-out; 
 }
