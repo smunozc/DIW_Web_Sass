@@ -4,6 +4,8 @@
 /// @group main
 ////
 
+@import "variables.scss";
+
 ///Eliminar margen por defecto
 body,
 .container,
@@ -12,6 +14,132 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     margin: 0px;
+}
+
+///Container
+.container {
+    background-color: $color-fondo;
+    width: 100%;
+
+    ///Header
+    header {
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+
+        ///Menu para movil y tablet
+        .menu-oculto {
+            background-color: $color-fondo-secundario;
+            height: $header-small-height-size;
+            width: $header-small-width-size;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                margin: 0 20px;
+                width: $icon-small-size;
+            }
+
+            .title {
+                align-items: center;
+                display: flex;
+                text-align: center;
+                width: 50%;
+
+                .essence-word {
+                    font-size: 1rem;
+                    text-align: end;
+                    margin-right: 5px;
+                }
+
+                .decoracion-word {
+                    background-color: $color-fuente-parrafo;
+                    color: $color-fuente-secundario;
+                    font-size: 0.5rem;
+                    padding: 1px 2px;
+                    text-align: start;
+                }
+            }
+
+            .cart-section {
+                background-color: $color-menu-activo;
+                height: 100%;
+                position: relative;
+                width: 70px;
+            }
+
+            .cart {
+                position: absolute;
+                top: 34%;
+                left: 7%;
+                width: 17px;
+            }
+        }
+
+        ///Menu para PC
+        .menu {
+            display: none;
+            position: absolute;
+            left: 10%;
+            top: 30px;
+        }
+    }
+
+    ///Sección del menú de links hacia otras paginas internas
+    #links {
+        display: flex;
+        height: 40px;
+        width: 100%;
+        align-items: center;
+        position: fixed;
+        top: 60px;
+        transition: all 0.3s ease-in;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        a{
+            align-items: center;
+            background-color: $color-menu-activo;
+            color: $color-fuente-secundario;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            text-decoration: none;
+            width: 50%;
+        }
+        a:hover{
+            background-color: $color-menu-hover;
+        }
+    }
+}
+
+///Main
+main{
+    position: relative;
+    top: 60px;
+    z-index: 0;
+}
+
+///Clase para esconder la parte del menu con links a paginas internas
+.hide{
+    transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+    -moz-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
+}
+
+///Clase para mostrar la parte del menu con links a paginas internas
+.show{
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
 }

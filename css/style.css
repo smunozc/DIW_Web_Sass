@@ -1,0 +1,120 @@
+body,
+.container,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+.container {
+  background-color: #ffeed9;
+  width: 100%;
+}
+.container header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+.container header .menu-oculto {
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container header .menu-oculto img {
+  margin: 0 20px;
+  width: 15px;
+}
+.container header .menu-oculto .title {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  width: 50%;
+}
+.container header .menu-oculto .title .essence-word {
+  font-size: 1rem;
+  text-align: end;
+  margin-right: 5px;
+}
+.container header .menu-oculto .title .decoracion-word {
+  background-color: #945f46;
+  color: white;
+  font-size: 0.5rem;
+  padding: 1px 2px;
+  text-align: start;
+}
+.container header .menu-oculto .cart-section {
+  background-color: #945f46;
+  height: 100%;
+  position: relative;
+  width: 70px;
+}
+.container header .menu-oculto .cart {
+  position: absolute;
+  top: 34%;
+  left: 7%;
+  width: 17px;
+}
+.container header .menu {
+  display: none;
+  position: absolute;
+  left: 10%;
+  top: 30px;
+}
+.container #links {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  top: 60px;
+  transition: all 0.3s ease-in;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+.container #links a {
+  align-items: center;
+  background-color: #945f46;
+  color: white;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  text-decoration: none;
+  width: 50%;
+}
+.container #links a:hover {
+  background-color: #744a37;
+}
+
+main {
+  position: relative;
+  top: 60px;
+  z-index: 0;
+}
+
+.hide {
+  transform: translateY(-40px);
+  -webkit-transform: translateY(-40px);
+  -moz-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  -o-transform: translateY(-40px);
+}
+
+.show {
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+////
+///@access public
+///@author Salvador Muñoz
+////
+
+///Variables
+
+/// @group colores
+$color-fondo:  rgb(255, 238, 217);
+/// @group colores
+$color-fondo-secundario: white;
+/// @group colores
+$color-fuente: black;
+/// @group colores
+$color-fuente-secundario: white;
+/// @group colores
+$color-fuente-parrafo: rgb(148, 95, 70);
+/// @group colores
+$color-menu-activo: rgb(148, 95, 70);
+/// @group colores
+$color-menu-hover: rgb(116, 74, 55);
+
+/// @group size
+$icon-pc-size: 100px;
+/// @group size
+$header-pc-height-size: 80px;
+/// @group size
+$header-pc-width-size: 80%;
+
+/// @group size
+$icon-small-size: 15px;
+/// @group size
+$header-small-height-size: 60px;
+/// @group size
+$header-small-width-size: 100%;
+/// @group size
+$text-size: 1rem;
+/// @group size
+$keyword-size: 3rem;
+
+///Breakpoints
+
+/// @group dimensiones
+$breakpoint-tablet: 576px;
+/// @group dimensiones
+$breakpoint-pc: 992px;
