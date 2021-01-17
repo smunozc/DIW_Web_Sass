@@ -9,6 +9,7 @@
 ///Eliminar margen por defecto
 body,
 .container,
+figure,
 h1,
 h2,
 h3,
@@ -17,6 +18,11 @@ h5,
 h6,
 p {
     margin: 0px;
+}
+
+///Eliminar decoración de enlaces por defecto
+a{
+    text-decoration: none;
 }
 
 ///Container
@@ -46,6 +52,7 @@ p {
 
             .title {
                 align-items: center;
+                color: $color-fuente;
                 display: flex;
                 text-align: center;
                 width: 50%;
@@ -110,7 +117,6 @@ p {
             display: flex;
             height: 100%;
             justify-content: center;
-            text-decoration: none;
             width: 50%;
         }
         a:hover{
@@ -124,6 +130,51 @@ main{
     position: relative;
     top: 60px;
     z-index: 0;
+
+    ///Sección del main que contiene el texto de bienvenida a la página principal
+    .texto{
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        padding: 60px 25px;
+
+        p{
+            color: $color-fuente-parrafo;
+            font-size: $text-size;
+        }
+
+        ///Formateo de la palabra clave del texto
+        #keyword{
+            font-size: $keyword-size;
+        }
+
+        a{
+            background-color: $color-menu-activo;
+            color: $color-fuente-secundario;
+            margin-top: 60px;
+            padding: 14px;
+            text-align: center;
+            width: 120px;
+        }
+        a:hover{
+            background-color: $color-menu-hover;
+        }
+    }
+
+    ///Sección del main que contiene el carrusel
+    .carousel{
+        background-color: $color-fondo-secundario;
+        .carousel_nav{
+            display: none;
+        }
+        figure{
+            display: flex;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
 }
 
 ///Clase para esconder la parte del menu con links a paginas internas

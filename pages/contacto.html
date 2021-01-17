@@ -11,12 +11,39 @@
 <body>
     <div class="container">
         <header>
-            <h1>Essence Decoración</h1>
-            <a href="./producto.html">Productos</a>
-            <a href="./contacto.html">Contacto</a>
-            <img src="../img/icons/loupe.svg" alt="search icon">
-            <img src="../img/icons/shopping-cart.svg" alt="shopping cart icon">
+
+            <div class="menu-oculto">
+                <img id="navBars" src="../img/icons/menu.svg" alt="menu bars icon">
+
+                <a href="../index.html" class="title">
+                    <p class="essence-word">ESSENCE</p>
+                    <p class="decoracion-word">DECORACIÓN</p>
+                </a>
+
+                <img src="../img/icons/loupe.svg" alt="search icon">
+                <div class="cart-section"><img class="cart" src="../img/icons/shopping-cart.svg" alt="shopping cart icon"></div>
+            </div>
+
+            <div class="menu">
+                <a href="../index.html" class="title">
+                    <p class="essence-word">ESSENCE</p>
+                    <p class="decoracion-word">DECORACIÓN</p>
+                </a>
+
+                <a href="../pages/producto.html">Productos</a>
+                <a href="../pages/contacto.html">Contacto</a>
+
+                <img src="../img/icons/loupe.svg" alt="search icon">
+                <div class="cart-section"><img class="cart" src="../img/icons/shopping-cart.svg" alt="shopping cart icon"></div>
+            </div>
+
         </header>
+
+        <div id="links" class="hide">
+            <a href="../pages/producto.html">Productos</a>
+            <a href="../pages/contacto.html">Contacto</a>
+        </div>
+        
     </div>
 </body>
 </html>
