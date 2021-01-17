@@ -16,9 +16,9 @@ $color-fuente-secundario: white;
 /// @group colores
 $color-fuente-parrafo: rgb(148, 95, 70);
 /// @group colores
-$color-menu-activo: rgb(148, 95, 70);
+$color-menu-activo: $color-fuente-parrafo;
 /// @group colores
-$color-menu-hover: rgb(116, 74, 55);
+$color-menu-hover: darken($color-menu-activo, 20%);
 
 /// @group size
 $icon-pc-size: 100px;
@@ -35,6 +35,7 @@ $icon-small-size: 15px;
 $header-small-height-size: 60px;
 /// @group size
 $header-small-width-size: 100%;
+
 /// @group size
 $text-size: 1rem;
 /// @group size

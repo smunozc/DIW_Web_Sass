@@ -97,28 +97,27 @@ a {
   width: 50%;
 }
 .container #links a:hover {
-  background-color: #744a37;
+  background-color: #4f3325;
 }
-
-main {
+.container main {
   position: relative;
   top: 60px;
   z-index: 0;
 }
-main .texto {
+.container main .texto {
   display: flex;
   flex-direction: column;
   height: 250px;
   padding: 60px 25px;
 }
-main .texto p {
+.container main .texto p {
   color: #945f46;
   font-size: 1rem;
 }
-main .texto #keyword {
+.container main .texto #keyword {
   font-size: 4.5rem;
 }
-main .texto a {
+.container main .texto a {
   background-color: #945f46;
   color: white;
   margin-top: 60px;
@@ -126,21 +125,34 @@ main .texto a {
   text-align: center;
   width: 120px;
 }
-main .texto a:hover {
-  background-color: #744a37;
+.container main .texto a:hover {
+  background-color: #4f3325;
 }
-main .carousel {
+.container main .carousel {
   background-color: white;
 }
-main .carousel .carousel_nav {
+.container main .carousel .carousel_nav {
   display: none;
 }
-main .carousel figure {
+.container main .carousel figure {
+  --n: 1;
   display: flex;
+  height: 250px;
+  overflow-x: hidden;
+  overflow-y: hidden;
   width: 100%;
+  width: calcularAnchuraCarousel(var(--n));
+  transform: translate(calc(var(--i, 0)/var(--n)*-100%));
 }
-main .carousel figure img {
+.container main .carousel figure img {
+  min-width: 100%;
+  transition: all 1s ease-out;
   width: 100%;
+  width: calcularAnchuraCarouselImg(var(--n));
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
 }
 
 .hide {
@@ -157,6 +169,22 @@ main .carousel figure img {
   -moz-transform: translateY(0px);
   -ms-transform: translateY(0px);
   -o-transform: translateY(0px);
+}
+
+.slide-left {
+  transform: translateZ(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+}
+
+.slide-right {
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
 }
 
 /*# sourceMappingURL=style.css.map */
