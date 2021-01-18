@@ -219,6 +219,19 @@ a {
             }
         }
 
+        .contact{
+            width: 80%;
+
+            figure img{
+                width: $small-profile-picture-size;
+            }
+
+            p{
+                font-size: $text-size;
+                margin-top: 10px;
+            }
+        }
+
     }
 
     footer{

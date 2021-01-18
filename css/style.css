@@ -175,6 +175,16 @@ a {
   margin-top: 10px;
   padding-bottom: 10px;
 }
+.container main .contact {
+  width: 80%;
+}
+.container main .contact figure img {
+  width: 50%;
+}
+.container main .contact p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
 .container footer {
   background-color: white;
   display: flex;
