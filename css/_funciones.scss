@@ -5,30 +5,19 @@
 
 
 /// @group funciones
-/// Funcion calcular anchura de las imagenes del carrusel.
-/// La variable img-count pasada como parámetro determinará la anchura de las imagenes.
-/// @parameter $img-count - Valor de la anchura de la que dependera la anchura de las imagenes.
-/// @example scss - Funcion calcularAnchuraCarouselImg
-/// width: calcularAnchuraCarouselImg($img-number);
-@function calcularAnchuraCarouselImg($img-count) {
+/// Funcion calcular anchuras.
+/// La variable breakpoint pasada como parámetro determinará la altura del carrusel de la página.
+/// @parameter {pixel} $breakpoint - Valor de la anchura minima de la que dependera la altura del carrusel.
+/// @example scss - Funcion calcularAltura
+/// width: calcularAltura($breakpoint-tablet);
+@function calcularAltura($breakpoint) {
 
-    @if $img-count >= 1 {
-        @return 100% / $img-count;
+    @if $breakpoint==$breakpoint-pc {
+        @return 100%;
     }
 
-}
-
-
-/// @group funciones
-/// Funcion calcular anchura del carrusel.
-/// La variable img-count pasada como parámetro determinará la anchura del carrusel.
-/// @parameter $img-count - Valor de la anchura de la que dependera la anchura del carrusel.
-/// @example scss - Funcion calcularAnchuraCarousel
-/// width: calcularAnchuraCarousel($img-number);
-@function calcularAnchuraCarousel($img-count) {
-
-    @if $img-count >= 1 {
-        @return 100% * $img-count;
+    @else if $breakpoint==$breakpoint-tablet {
+        @return $carousel-height-size + ($carousel-height-size * 90 / 100);
     }
 
 }

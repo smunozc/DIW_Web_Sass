@@ -25,16 +25,22 @@ $color-menu-activo: lighten($color-terciario, 6%);
 /// @group colores
 $color-menu-hover: darken($color-menu-activo, 10%);
 
+/// @group colores
+$color-borde-card-figure:  rgb(211, 211, 211);
+
 
 
 /// @group size
-$icon-pc-size: 100px;
+$icon-pc-size: 20px;
 /// @group size
 $header-pc-height-size: 80px;
 /// @group size
 $header-pc-width-size: 80%;
 /// @group size
 $carousel-arrow-width-size: 50px;
+
+/// @group size
+$carousel-height-size: 250px;
 
 /// @group size
 $icon-small-size: 15px;
@@ -69,3 +75,13 @@ $breakpoint-pc: 992px;
 
 /// @group estilos
 $estilo-fuente-general: 'Poppins', sans-serif;
+
+///Bordes
+
+/// @group bordes
+$border-bottom-card-figure: 1px solid $color-borde-card-figure;
+
+///Efectos de animación
+
+/// @group animacion
+$efecto-animacion-diapositiva-carrusel: ease-out;

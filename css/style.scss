@@ -5,6 +5,8 @@
 ////
 
 @import "variables.scss";
+@import "funciones.scss";
+@import "style-tablet.scss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 ///Eliminar margen por defecto
@@ -162,7 +164,7 @@ a {
             figure {
                 --n: 1;
                 display: flex;
-                height: 250px;
+                height: $carousel-height-size;
                 overflow-y: hidden;
                 width: 100%;
                 width: calc(var(--n)*(100%));
@@ -188,7 +190,7 @@ a {
 
             figure{
                 align-items: center;
-                border-bottom: 1px solid rgb(211, 211, 211);
+                border-bottom: $border-bottom-card-figure;
                 display: flex;
                 justify-content: center;
                 overflow-y: hidden;
@@ -242,6 +244,7 @@ a {
         align-items: center;
         height: 90px;
         margin-top: 80px;
+        padding: 20px 0;
         position: relative;
         width: 100%;
         z-index: 3;
@@ -285,7 +288,7 @@ a {
 
 ///Clase para la transición de la diapositiva
 .smooth { 
-    transition: transform .5s ease-out; 
+    transition: transform .5s #{$efecto-animacion-diapositiva-carrusel}; 
 }
 
 ///Clase para dar estilo al logo de la página

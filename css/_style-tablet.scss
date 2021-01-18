@@ -1,0 +1,23 @@
+////
+/// @access public
+/// @author Salvador Muñoz
+////
+
+@import "variables.scss";
+@import "funciones.scss";
+
+///Breakpoint con el tamaño minimo para el diseño responsivo de una tablet
+@media only screen and (min-width: $breakpoint-tablet) {
+    .menu-oculto img{
+        width: $icon-pc-size !important;
+    }
+    #figImg{
+        height: calcularAltura($breakpoint-tablet) !important;
+    }
+    .card{
+        width: 40% !important;
+        figure img{
+            width: 60% !important;
+        }
+    }
+}
