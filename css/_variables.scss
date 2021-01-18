@@ -50,9 +50,11 @@ $small-title-essence-size: 1.1rem;
 $small-title-decoracion-size: 0.7rem;
 
 /// @group size
-$text-size: 1rem;
+$text-size: .9rem;
 /// @group size
-$keyword-size: 4.5rem;
+$keyword-size: 4rem;
+/// @group size
+$h2-size: 1.2rem;
 
 ///Breakpoints
 
@@ -60,3 +62,8 @@ $keyword-size: 4.5rem;
 $breakpoint-tablet: 576px;
 /// @group dimensiones
 $breakpoint-pc: 992px;
+
+///Estilos
+
+/// @group estilos
+$estilo-fuente-general: 'Poppins', sans-serif;
