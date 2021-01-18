@@ -9,16 +9,23 @@
 $color-fondo:  rgb(250, 243, 236);
 /// @group colores
 $color-fondo-secundario: white;
+
 /// @group colores
 $color-fuente: black;
 /// @group colores
 $color-fuente-secundario: white;
+
 /// @group colores
-$color-fuente-parrafo: rgb(148, 95, 70);
+$color-terciario: rgb(141, 102, 71);
 /// @group colores
-$color-menu-activo: $color-fuente-parrafo;
+$color-terciario-oscuro: darken($color-terciario, 10%);
+
+/// @group colores
+$color-menu-activo: lighten($color-terciario, 6%);
 /// @group colores
 $color-menu-hover: darken($color-menu-activo, 10%);
+
+
 
 /// @group size
 $icon-pc-size: 100px;
@@ -35,6 +42,12 @@ $icon-small-size: 15px;
 $header-small-height-size: 60px;
 /// @group size
 $header-small-width-size: 100%;
+/// @group size
+$menu-small-height-size: 60px;
+/// @group size
+$small-title-essence-size: 1.1rem;
+/// @group size
+$small-title-decoracion-size: 0.7rem;
 
 /// @group size
 $text-size: 1rem;

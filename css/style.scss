@@ -58,22 +58,22 @@ a {
                 width: 50%;
 
                 .essence-word {
-                    font-size: 1rem;
+                    font-size: $small-title-essence-size;
                     text-align: end;
                     margin-right: 5px;
                 }
 
                 .decoracion-word {
-                    background-color: $color-fuente-parrafo;
+                    background-color: $color-terciario;
                     color: $color-fuente-secundario;
-                    font-size: 0.5rem;
+                    font-size: $small-title-decoracion-size;
                     padding: 1px 2px;
                     text-align: start;
                 }
             }
 
             .cart-section {
-                background-color: $color-menu-activo;
+                background-color: $color-terciario;
                 height: 100%;
                 position: relative;
                 width: 70px;
@@ -99,7 +99,7 @@ a {
     ///Sección del menú de links hacia otras paginas internas
     #links {
         display: flex;
-        height: 40px;
+        height: $menu-small-height-size;
         width: 100%;
         align-items: center;
         position: fixed;
@@ -140,7 +140,7 @@ a {
             padding: 60px 25px;
 
             p {
-                color: $color-fuente-parrafo;
+                color: $color-terciario;
                 font-size: $text-size;
             }
 
@@ -150,7 +150,7 @@ a {
             }
 
             a {
-                background-color: $color-menu-activo;
+                background-color: $color-terciario;
                 color: $color-fuente-secundario;
                 margin-top: 60px;
                 padding: 14px;
@@ -159,7 +159,7 @@ a {
             }
 
             a:hover {
-                background-color: $color-menu-hover;
+                background-color: $color-terciario-oscuro;
             }
         }
 
@@ -194,11 +194,11 @@ a {
 
 ///Clase para esconder la parte del menu con links a paginas internas
 .hide {
-    transform: translateY(-40px);
-    -webkit-transform: translateY(-40px);
-    -moz-transform: translateY(-40px);
-    -ms-transform: translateY(-40px);
-    -o-transform: translateY(-40px);
+    transform: translateY(-$menu-small-height-size);
+    -webkit-transform: translateY(-$menu-small-height-size);
+    -moz-transform: translateY(-$menu-small-height-size);
+    -ms-transform: translateY(-$menu-small-height-size);
+    -o-transform: translateY(-$menu-small-height-size);
 }
 
 ///Clase para mostrar la parte del menu con links a paginas internas

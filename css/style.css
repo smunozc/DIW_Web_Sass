@@ -44,19 +44,19 @@ a {
   width: 50%;
 }
 .container header .menu-oculto .title .essence-word {
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: end;
   margin-right: 5px;
 }
 .container header .menu-oculto .title .decoracion-word {
-  background-color: #945f46;
+  background-color: #8d6647;
   color: white;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   padding: 1px 2px;
   text-align: start;
 }
 .container header .menu-oculto .cart-section {
-  background-color: #945f46;
+  background-color: #8d6647;
   height: 100%;
   position: relative;
   width: 70px;
@@ -75,7 +75,7 @@ a {
 }
 .container #links {
   display: flex;
-  height: 40px;
+  height: 60px;
   width: 100%;
   align-items: center;
   position: fixed;
@@ -89,7 +89,7 @@ a {
 }
 .container #links a {
   align-items: center;
-  background-color: #945f46;
+  background-color: #a17551;
   color: white;
   display: flex;
   height: 100%;
@@ -97,7 +97,7 @@ a {
   width: 50%;
 }
 .container #links a:hover {
-  background-color: #714936;
+  background-color: #7f5c40;
 }
 .container main {
   position: relative;
@@ -111,14 +111,14 @@ a {
   padding: 60px 25px;
 }
 .container main .texto p {
-  color: #945f46;
+  color: #8d6647;
   font-size: 1rem;
 }
 .container main .texto #keyword {
   font-size: 4.5rem;
 }
 .container main .texto a {
-  background-color: #945f46;
+  background-color: #8d6647;
   color: white;
   margin-top: 60px;
   padding: 14px;
@@ -126,7 +126,7 @@ a {
   width: 120px;
 }
 .container main .texto a:hover {
-  background-color: #714936;
+  background-color: #6b4d36;
 }
 .container main .carousel {
   background-color: white;
@@ -151,11 +151,11 @@ a {
 }
 
 .hide {
-  transform: translateY(-40px);
-  -webkit-transform: translateY(-40px);
-  -moz-transform: translateY(-40px);
-  -ms-transform: translateY(-40px);
-  -o-transform: translateY(-40px);
+  transform: translateY(-60px);
+  -webkit-transform: translateY(-60px);
+  -moz-transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
+  -o-transform: translateY(-60px);
 }
 
 .show {
