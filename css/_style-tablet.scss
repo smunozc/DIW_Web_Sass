@@ -7,7 +7,7 @@
 @import "funciones.scss";
 
 ///Breakpoint con el tamaño minimo para el diseño responsivo de una tablet
-@media only screen and (min-width: $breakpoint-tablet) {
+@media (min-width: $breakpoint-tablet) {
     .menu-oculto img{
         width: $icon-pc-size !important;
     }

@@ -7,6 +7,7 @@
 @import "variables.scss";
 @import "funciones.scss";
 @import "style-tablet.scss";
+@import "style-pc.scss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 ///Eliminar margen por defecto
@@ -75,9 +76,6 @@ a {
         ///Menu para PC
         .menu {
             display: none;
-            position: absolute;
-            left: 10%;
-            top: 30px;
         }
     }
 
