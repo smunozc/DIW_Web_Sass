@@ -1,0 +1,610 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>SassDoc</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="SassDoc - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="Release the docs!"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">SassDoc</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="animacion"><a href="#animacion">animacion</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="animacion-variable"><a href="#animacion-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="animacion" data-name="efecto-animacion-diapositiva-carrusel" data-type="variable"><a href="#animacion-variable-efecto-animacion-diapositiva-carrusel">efecto-animacion-diapositiva-carrusel</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="bordes"><a href="#bordes">bordes</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="bordes-variable"><a href="#bordes-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="bordes" data-name="border-bottom-card-figure" data-type="variable"><a href="#bordes-variable-border-bottom-card-figure">border-bottom-card-figure</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="colores"><a href="#colores">colores</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="colores-variable"><a href="#colores-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color-fondo" data-type="variable"><a href="#colores-variable-color-fondo">color-fondo</a></li><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color-fondo-secundario" data-type="variable"><a href="#colores-variable-color-fondo-secundario">color-fondo-secundario</a></li><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color-fuente" data-type="variable"><a href="#colores-variable-color-fuente">color-fuente</a></li><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color-fuente-secundario" data-type="variable"><a href="#colores-variable-color-fuente-secundario">color-fuente-secundario</a></li><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color-terciario" data-type="variable"><a href="#colores-variable-color-terciario">color-terciario</a></li><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color-terciario-oscuro" data-type="variable"><a href="#colores-variable-color-terciario-oscuro">color-terciario-oscuro</a></li><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color-menu-activo" data-type="variable"><a href="#colores-variable-color-menu-activo">color-menu-activo</a></li><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color-menu-hover" data-type="variable"><a href="#colores-variable-color-menu-hover">color-menu-hover</a></li><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color-borde-card-figure" data-type="variable"><a href="#colores-variable-color-borde-card-figure">color-borde-card-figure</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="dimensiones"><a href="#dimensiones">dimensiones</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="dimensiones-variable"><a href="#dimensiones-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="dimensiones" data-name="breakpoint-tablet" data-type="variable"><a href="#dimensiones-variable-breakpoint-tablet">breakpoint-tablet</a></li><li class="sidebar__item sassdoc__item" data-group="dimensiones" data-name="breakpoint-pc" data-type="variable"><a href="#dimensiones-variable-breakpoint-pc">breakpoint-pc</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="estilos"><a href="#estilos">estilos</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="estilos-variable"><a href="#estilos-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="estilos" data-name="estilo-fuente-general" data-type="variable"><a href="#estilos-variable-estilo-fuente-general">estilo-fuente-general</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="funciones"><a href="#funciones">funciones</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="funciones-function"><a href="#funciones-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="funciones" data-name="calcularAltura" data-type="function"><a href="#funciones-function-calcularAltura">calcularAltura</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="main"><a href="#main">main</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="main-css"><a href="#main-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="main" data-name="body,
+.container,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p" data-type="css"><a href="#main-css-body,
+.container,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p">body, .container, figure, h1, h2, h3, h4, h5, h6, p</a></li><li class="sidebar__item sassdoc__item" data-group="main" data-name="a" data-type="css"><a href="#main-css-a">a</a></li><li class="sidebar__item sassdoc__item" data-group="main" data-name=".container" data-type="css"><a href="#main-css-.container">.container</a></li><li class="sidebar__item sassdoc__item" data-group="main" data-name="header" data-type="css"><a href="#main-css-header">header</a></li><li class="sidebar__item sassdoc__item" data-group="main" data-name=".menu-oculto" data-type="css"><a href="#main-css-.menu-oculto">.menu-oculto</a></li><li class="sidebar__item sassdoc__item" data-group="main" data-name=".menu" data-type="css"><a href="#main-css-.menu">.menu</a></li><li class="sidebar__item sassdoc__item" data-group="main" data-name="#links" data-type="css"><a href="#main-css-#links">#links</a></li><li class="sidebar__item sassdoc__item" data-group="main" data-name="main" data-type="css"><a href="#main-css-main">main</a></li><li class="sidebar__item sassdoc__item" data-group="main" data-name=".texto" data-type="css"><a href="#main-css-.texto">.texto</a></li><li class="sidebar__item sassdoc__item" data-group="main" data-name="#keyword" data-type="css"><a href="#main-css-#keyword">#keyword</a></li><li class="sidebar__item sassdoc__item" data-group="main" data-name=".carousel" data-type="css"><a href="#main-css-.carousel">.carousel</a></li><li class="sidebar__item sassdoc__item" data-group="main" data-name=".hide" data-type="css"><a href="#main-css-.hide">.hide</a></li><li class="sidebar__item sassdoc__item" data-group="main" data-name=".show" data-type="css"><a href="#main-css-.show">.show</a></li><li class="sidebar__item sassdoc__item" data-group="main" data-name=".smooth" data-type="css"><a href="#main-css-.smooth">.smooth</a></li><li class="sidebar__item sassdoc__item" data-group="main" data-name=".title" data-type="css"><a href="#main-css-.title">.title</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="size"><a href="#size">size</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="size-variable"><a href="#size-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="size" data-name="icon-pc-size" data-type="variable"><a href="#size-variable-icon-pc-size">icon-pc-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="header-pc-height-size" data-type="variable"><a href="#size-variable-header-pc-height-size">header-pc-height-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="header-pc-width-size" data-type="variable"><a href="#size-variable-header-pc-width-size">header-pc-width-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="carousel-arrow-width-size" data-type="variable"><a href="#size-variable-carousel-arrow-width-size">carousel-arrow-width-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="pc-title-essence-size" data-type="variable"><a href="#size-variable-pc-title-essence-size">pc-title-essence-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="pc-title-decoracion-size" data-type="variable"><a href="#size-variable-pc-title-decoracion-size">pc-title-decoracion-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="text-pc-size" data-type="variable"><a href="#size-variable-text-pc-size">text-pc-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="keyword-pc-size" data-type="variable"><a href="#size-variable-keyword-pc-size">keyword-pc-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="h2-pc-size" data-type="variable"><a href="#size-variable-h2-pc-size">h2-pc-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="carousel-height-size" data-type="variable"><a href="#size-variable-carousel-height-size">carousel-height-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="icon-small-size" data-type="variable"><a href="#size-variable-icon-small-size">icon-small-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="header-small-height-size" data-type="variable"><a href="#size-variable-header-small-height-size">header-small-height-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="header-small-width-size" data-type="variable"><a href="#size-variable-header-small-width-size">header-small-width-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="menu-small-height-size" data-type="variable"><a href="#size-variable-menu-small-height-size">menu-small-height-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="small-title-essence-size" data-type="variable"><a href="#size-variable-small-title-essence-size">small-title-essence-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="small-title-decoracion-size" data-type="variable"><a href="#size-variable-small-title-decoracion-size">small-title-decoracion-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="small-profile-picture-size" data-type="variable"><a href="#size-variable-small-profile-picture-size">small-profile-picture-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="text-size" data-type="variable"><a href="#size-variable-text-size">text-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="keyword-size" data-type="variable"><a href="#size-variable-keyword-size">keyword-size</a></li><li class="sidebar__item sassdoc__item" data-group="size" data-name="h2-size" data-type="variable"><a href="#size-variable-h2-size">h2-size</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="animacion"><div class="container">animacion</div></h1><section class="main__sub-section" id="animacion-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="animacion-variable-efecto-animacion-diapositiva-carrusel"><h3 class="item__heading"><a class="item__name" href="#variable-efecto-animacion-diapositiva-carrusel">efecto-animacion-diapositiva-carrusel</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$efecto-animacion-diapositiva-carrusel: ease-out;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="bordes"><div class="container">bordes</div></h1><section class="main__sub-section" id="bordes-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="bordes-variable-border-bottom-card-figure"><h3 class="item__heading"><a class="item__name" href="#variable-border-bottom-card-figure">border-bottom-card-figure</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$border-bottom-card-figure: 1px solid $color-borde-card-figure;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="colores"><div class="container">colores</div></h1><section class="main__sub-section" id="colores-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="colores-variable-color-fondo"><h3 class="item__heading"><a class="item__name" href="#variable-color-fondo">color-fondo</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-fondo: rgb(250, 243, 236);</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="colores-variable-color-fondo-secundario"><h3 class="item__heading"><a class="item__name" href="#variable-color-fondo-secundario">color-fondo-secundario</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-fondo-secundario: white;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="colores-variable-color-fuente"><h3 class="item__heading"><a class="item__name" href="#variable-color-fuente">color-fuente</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-fuente: black;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="colores-variable-color-fuente-secundario"><h3 class="item__heading"><a class="item__name" href="#variable-color-fuente-secundario">color-fuente-secundario</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-fuente-secundario: white;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="colores-variable-color-terciario"><h3 class="item__heading"><a class="item__name" href="#variable-color-terciario">color-terciario</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-terciario: rgb(141, 102, 71);</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="colores-variable-color-terciario-oscuro"><h3 class="item__heading"><a class="item__name" href="#variable-color-terciario-oscuro">color-terciario-oscuro</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-terciario-oscuro: darken($color-terciario, 10%);</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="colores-variable-color-menu-activo"><h3 class="item__heading"><a class="item__name" href="#variable-color-menu-activo">color-menu-activo</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-menu-activo: lighten($color-terciario, 6%);</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="colores-variable-color-menu-hover"><h3 class="item__heading"><a class="item__name" href="#variable-color-menu-hover">color-menu-hover</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-menu-hover: darken($color-menu-activo, 10%);</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="colores-variable-color-borde-card-figure"><h3 class="item__heading"><a class="item__name" href="#variable-color-borde-card-figure">color-borde-card-figure</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-borde-card-figure: rgb(211, 211, 211);</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="dimensiones"><div class="container">dimensiones</div></h1><section class="main__sub-section" id="dimensiones-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="dimensiones-variable-breakpoint-tablet"><h3 class="item__heading"><a class="item__name" href="#variable-breakpoint-tablet">breakpoint-tablet</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$breakpoint-tablet: 576px;</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#funciones-function-calcularAltura"><code>calcularAltura</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="dimensiones-variable-breakpoint-pc"><h3 class="item__heading"><a class="item__name" href="#variable-breakpoint-pc">breakpoint-pc</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$breakpoint-pc: 992px;</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#funciones-function-calcularAltura"><code>calcularAltura</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="estilos"><div class="container">estilos</div></h1><section class="main__sub-section" id="estilos-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="estilos-variable-estilo-fuente-general"><h3 class="item__heading"><a class="item__name" href="#variable-estilo-fuente-general">estilo-fuente-general</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$estilo-fuente-general: &#39;Poppins&#39;, sans-serif;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="funciones"><div class="container">funciones</div></h1><div class="main__description"><div class="container"><p>Funcion calcular anchuras. La variable breakpoint pasada como parámetro determinará la altura del carrusel de la página.</p></div></div><section class="main__sub-section" id="funciones-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="funciones-function-calcularAltura"><h3 class="item__heading"><a class="item__name" href="#function-calcularAltura">calcularAltura</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function calcularAltura($breakpoint) { 
+
+    @if $breakpoint==$breakpoint-pc {
+        @return 100%;
+    }
+
+    @else if $breakpoint==$breakpoint-tablet {
+        @return $carousel-height-size + ($carousel-height-size * 90 / 100);
+    }
+
+ }" data-collapsed="@function calcularAltura($breakpoint) { ... }"><code>@function calcularAltura($breakpoint) { ... }</code></pre></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$breakpoint</code></th><td data-label="desc"><p>Valor de la anchura minima de la que dependera la altura del carrusel.</p></td><td data-label="type"><code>Pixel</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Funcion calcularAltura</p></div><pre class="example__code language-scss"><code>width: calcularAltura($breakpoint-tablet);</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#dimensiones-variable-breakpoint-pc"><code>breakpoint-pc</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#dimensiones-variable-breakpoint-tablet"><code>breakpoint-tablet</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#size-variable-carousel-height-size"><code>carousel-height-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#size-variable-carousel-height-size"><code>carousel-height-size</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="main"><div class="container">main</div></h1><section class="main__sub-section" id="main-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="main-css-body,
+.container,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p"><h3 class="item__heading"><a class="item__name" href="#css-body,
+.container,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p">body, .container, figure, h1, h2, h3, h4, h5, h6, p</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>body,
+.container,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}</code>" data-collapsed="body,
+.container,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p { ... }"><code>body,
+.container,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Eliminar margen por defecto</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="main-css-a"><h3 class="item__heading"><a class="item__name" href="#css-a">a</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>a {
+  text-decoration: none;
+}</code>" data-collapsed="a { ... }"><code>a { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Eliminar decoración de enlaces por defecto</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="main-css-.container"><h3 class="item__heading"><a class="item__name" href="#css-.container">.container</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.container {
+  background-color: $color-fondo;
+    width: 100%;
+
+    ///Header
+    header {
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+
+        ///Menu para movil y tablet
+        .menu-oculto {
+            background-color: $color-fondo-secundario;
+            height: $header-small-height-size;
+            width: $header-small-width-size;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                margin: 0 20px;
+                width: $icon-small-size;
+            }
+
+            .cart-section {
+                background-color: $color-terciario;
+                height: 100%;
+                position: relative;
+                width: 70px;
+            }
+
+            .cart {
+                position: absolute;
+                top: 34%;
+                left: 7%;
+                width: 17px;
+            }
+        }
+
+        ///Menu para PC
+        .menu {
+            display: none;
+        }
+    }
+
+    ///Sección del menú de links hacia otras paginas internas
+    #links {
+        display: flex;
+        height: $menu-small-height-size;
+        width: 100%;
+        align-items: center;
+        position: fixed;
+        top: 60px;
+        transition: all 0.3s ease-in;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+
+        a {
+            align-items: center;
+            background-color: $color-menu-activo;
+            color: $color-fuente-secundario;
+            display: flex;
+            font-size: $text-size;
+            height: 100%;
+            justify-content: center;
+            width: 50%;
+        }
+
+        a:hover {
+            background-color: $color-menu-hover;
+        }
+    }
+
+    ///Main
+    main {
+        background-color: $color-fondo;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 60px;
+        z-index: 0;
+
+        ///Sección del main que contiene el texto de bienvenida a la página principal
+        .texto {
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            padding: 60px 25px;
+
+            p {
+                color: $color-terciario;
+                font-size: $text-size;
+            }
+
+            ///Formateo de la palabra clave del texto
+            #keyword {
+                font-size: $keyword-size;
+            }
+
+            a {
+                background-color: $color-terciario;
+                color: $color-fuente-secundario;
+                margin-top: 60px;
+                padding: 14px;
+                text-align: center;
+                width: 120px;
+            }
+
+            a:hover {
+                background-color: $color-terciario-oscuro;
+            }
+        }
+
+        ///Sección del main que contiene el carrusel
+        .carousel {
+            background-color: $color-fondo-secundario;
+            overflow-x: hidden;
+
+            .carousel_nav {
+                display: none;
+            }
+
+            figure {
+                --n: 1;
+                display: flex;
+                height: $carousel-height-size;
+                overflow-y: hidden;
+                width: 100%;
+                width: calc(var(--n)*(100%));
+                transform: translate(calc(var(--i, 0)/var(--n)*-100% + var(--tx, 0px)));
+                
+                img {
+                    //min-width: 100%;
+                    pointer-events: none;
+                    width: 100%;
+                    width: calc((100%)/var(--n));
+                }
+            }
+        }
+
+        .card{
+            background-color: $color-fondo-secundario;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            height: 320px;
+            margin: 30px auto;
+            width: 70%;
+
+            figure{
+                align-items: center;
+                border-bottom: $border-bottom-card-figure;
+                display: flex;
+                justify-content: center;
+                overflow-y: hidden;
+                width: 100%;
+                img{
+                    padding: 5px;
+                    width:90%;
+                }
+            }
+
+            h2, p, a{
+                margin: 0 10px;
+            }
+
+            h2{
+                font-size: $h2-size;
+                margin-top: 10px;
+            }
+
+            p{
+                margin-top: 30px;
+            }
+
+            a{
+                display: block;
+                margin-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        .contact{
+            width: 80%;
+
+            figure img{
+                width: $small-profile-picture-size;
+            }
+
+            p{
+                font-size: $text-size;
+                margin-top: 10px;
+            }
+        }
+
+    }
+
+    footer{
+        background-color: $color-fondo-secundario;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 90px;
+        margin-top: 80px;
+        padding: 20px 0;
+        position: relative;
+        width: 100%;
+        z-index: 3;
+
+        p, a{
+            font-size: $text-size;
+        }
+
+        .right-footer-section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+
+            .title{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+        }
+    }
+}</code>" data-collapsed=".container { ... }"><code>.container { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Container</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="main-css-header"><h3 class="item__heading"><a class="item__name" href="#css-header">header</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>header {
+  position: fixed;
+        z-index: 2;
+        width: 100%;
+
+        ///Menu para movil y tablet
+        .menu-oculto {
+            background-color: $color-fondo-secundario;
+            height: $header-small-height-size;
+            width: $header-small-width-size;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                margin: 0 20px;
+                width: $icon-small-size;
+            }
+
+            .cart-section {
+                background-color: $color-terciario;
+                height: 100%;
+                position: relative;
+                width: 70px;
+            }
+
+            .cart {
+                position: absolute;
+                top: 34%;
+                left: 7%;
+                width: 17px;
+            }
+        }
+
+        ///Menu para PC
+        .menu {
+            display: none;
+        }
+}</code>" data-collapsed="header { ... }"><code>header { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Header</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="main-css-.menu-oculto"><h3 class="item__heading"><a class="item__name" href="#css-.menu-oculto">.menu-oculto</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.menu-oculto {
+  background-color: $color-fondo-secundario;
+            height: $header-small-height-size;
+            width: $header-small-width-size;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                margin: 0 20px;
+                width: $icon-small-size;
+            }
+
+            .cart-section {
+                background-color: $color-terciario;
+                height: 100%;
+                position: relative;
+                width: 70px;
+            }
+
+            .cart {
+                position: absolute;
+                top: 34%;
+                left: 7%;
+                width: 17px;
+            }
+}</code>" data-collapsed=".menu-oculto { ... }"><code>.menu-oculto { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Menu para movil y tablet</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="main-css-.menu"><h3 class="item__heading"><a class="item__name" href="#css-.menu">.menu</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.menu {
+  display: none;
+}</code>" data-collapsed=".menu { ... }"><code>.menu { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Menu para PC</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="main-css-#links"><h3 class="item__heading"><a class="item__name" href="#css-#links">#links</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#links {
+  display: flex;
+        height: $menu-small-height-size;
+        width: 100%;
+        align-items: center;
+        position: fixed;
+        top: 60px;
+        transition: all 0.3s ease-in;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+
+        a {
+            align-items: center;
+            background-color: $color-menu-activo;
+            color: $color-fuente-secundario;
+            display: flex;
+            font-size: $text-size;
+            height: 100%;
+            justify-content: center;
+            width: 50%;
+        }
+
+        a:hover {
+            background-color: $color-menu-hover;
+        }
+}</code>" data-collapsed="#links { ... }"><code>#links { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Sección del menú de links hacia otras paginas internas</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="main-css-main"><h3 class="item__heading"><a class="item__name" href="#css-main">main</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>main {
+  background-color: $color-fondo;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 60px;
+        z-index: 0;
+
+        ///Sección del main que contiene el texto de bienvenida a la página principal
+        .texto {
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            padding: 60px 25px;
+
+            p {
+                color: $color-terciario;
+                font-size: $text-size;
+            }
+
+            ///Formateo de la palabra clave del texto
+            #keyword {
+                font-size: $keyword-size;
+            }
+
+            a {
+                background-color: $color-terciario;
+                color: $color-fuente-secundario;
+                margin-top: 60px;
+                padding: 14px;
+                text-align: center;
+                width: 120px;
+            }
+
+            a:hover {
+                background-color: $color-terciario-oscuro;
+            }
+        }
+
+        ///Sección del main que contiene el carrusel
+        .carousel {
+            background-color: $color-fondo-secundario;
+            overflow-x: hidden;
+
+            .carousel_nav {
+                display: none;
+            }
+
+            figure {
+                --n: 1;
+                display: flex;
+                height: $carousel-height-size;
+                overflow-y: hidden;
+                width: 100%;
+                width: calc(var(--n)*(100%));
+                transform: translate(calc(var(--i, 0)/var(--n)*-100% + var(--tx, 0px)));
+                
+                img {
+                    //min-width: 100%;
+                    pointer-events: none;
+                    width: 100%;
+                    width: calc((100%)/var(--n));
+                }
+            }
+        }
+
+        .card{
+            background-color: $color-fondo-secundario;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            height: 320px;
+            margin: 30px auto;
+            width: 70%;
+
+            figure{
+                align-items: center;
+                border-bottom: $border-bottom-card-figure;
+                display: flex;
+                justify-content: center;
+                overflow-y: hidden;
+                width: 100%;
+                img{
+                    padding: 5px;
+                    width:90%;
+                }
+            }
+
+            h2, p, a{
+                margin: 0 10px;
+            }
+
+            h2{
+                font-size: $h2-size;
+                margin-top: 10px;
+            }
+
+            p{
+                margin-top: 30px;
+            }
+
+            a{
+                display: block;
+                margin-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        .contact{
+            width: 80%;
+
+            figure img{
+                width: $small-profile-picture-size;
+            }
+
+            p{
+                font-size: $text-size;
+                margin-top: 10px;
+            }
+        }
+}</code>" data-collapsed="main { ... }"><code>main { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Main</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="main-css-.texto"><h3 class="item__heading"><a class="item__name" href="#css-.texto">.texto</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.texto {
+  display: flex;
+            flex-direction: column;
+            height: 250px;
+            padding: 60px 25px;
+
+            p {
+                color: $color-terciario;
+                font-size: $text-size;
+            }
+
+            ///Formateo de la palabra clave del texto
+            #keyword {
+                font-size: $keyword-size;
+            }
+
+            a {
+                background-color: $color-terciario;
+                color: $color-fuente-secundario;
+                margin-top: 60px;
+                padding: 14px;
+                text-align: center;
+                width: 120px;
+            }
+
+            a:hover {
+                background-color: $color-terciario-oscuro;
+            }
+}</code>" data-collapsed=".texto { ... }"><code>.texto { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Sección del main que contiene el texto de bienvenida a la página principal</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="main-css-#keyword"><h3 class="item__heading"><a class="item__name" href="#css-#keyword">#keyword</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#keyword {
+  font-size: $keyword-size;
+}</code>" data-collapsed="#keyword { ... }"><code>#keyword { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Formateo de la palabra clave del texto</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="main-css-.carousel"><h3 class="item__heading"><a class="item__name" href="#css-.carousel">.carousel</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.carousel {
+  background-color: $color-fondo-secundario;
+            overflow-x: hidden;
+
+            .carousel_nav {
+                display: none;
+            }
+
+            figure {
+                --n: 1;
+                display: flex;
+                height: $carousel-height-size;
+                overflow-y: hidden;
+                width: 100%;
+                width: calc(var(--n)*(100%));
+                transform: translate(calc(var(--i, 0)/var(--n)*-100% + var(--tx, 0px)));
+                
+                img {
+                    //min-width: 100%;
+                    pointer-events: none;
+                    width: 100%;
+                    width: calc((100%)/var(--n));
+                }
+            }
+}</code>" data-collapsed=".carousel { ... }"><code>.carousel { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Sección del main que contiene el carrusel</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="main-css-.hide"><h3 class="item__heading"><a class="item__name" href="#css-.hide">.hide</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.hide {
+  transform: translateY(-$menu-small-height-size);
+    -webkit-transform: translateY(-$menu-small-height-size);
+    -moz-transform: translateY(-$menu-small-height-size);
+    -ms-transform: translateY(-$menu-small-height-size);
+    -o-transform: translateY(-$menu-small-height-size);
+}</code>" data-collapsed=".hide { ... }"><code>.hide { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Clase para esconder la parte del menu con links a paginas internas</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="main-css-.show"><h3 class="item__heading"><a class="item__name" href="#css-.show">.show</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.show {
+  transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+}</code>" data-collapsed=".show { ... }"><code>.show { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Clase para mostrar la parte del menu con links a paginas internas</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="main-css-.smooth"><h3 class="item__heading"><a class="item__name" href="#css-.smooth">.smooth</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.smooth {
+  transition: transform .5s #{$efecto-animacion-diapositiva-carrusel};
+}</code>" data-collapsed=".smooth { ... }"><code>.smooth { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Clase para la transición de la diapositiva</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="main-css-.title"><h3 class="item__heading"><a class="item__name" href="#css-.title">.title</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.title {
+  align-items: center;
+    color: $color-fuente;
+    display: flex;
+    text-align: center;
+    width: 50%;
+
+    .essence-word {
+        font-size: $small-title-essence-size;
+        text-align: end;
+        margin-right: 5px;
+    }
+
+    .decoracion-word {
+        background-color: $color-terciario;
+        color: $color-fuente-secundario;
+        font-size: $small-title-decoracion-size;
+        padding: 1px 2px;
+        text-align: start;
+    }
+}</code>" data-collapsed=".title { ... }"><code>.title { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Clase para dar estilo al logo de la página</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="size"><div class="container">size</div></h1><section class="main__sub-section" id="size-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="size-variable-icon-pc-size"><h3 class="item__heading"><a class="item__name" href="#variable-icon-pc-size">icon-pc-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$icon-pc-size: 20px;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-header-pc-height-size"><h3 class="item__heading"><a class="item__name" href="#variable-header-pc-height-size">header-pc-height-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$header-pc-height-size: 100px;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-header-pc-width-size"><h3 class="item__heading"><a class="item__name" href="#variable-header-pc-width-size">header-pc-width-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$header-pc-width-size: 80%;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-carousel-arrow-width-size"><h3 class="item__heading"><a class="item__name" href="#variable-carousel-arrow-width-size">carousel-arrow-width-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$carousel-arrow-width-size: 50px;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-pc-title-essence-size"><h3 class="item__heading"><a class="item__name" href="#variable-pc-title-essence-size">pc-title-essence-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$pc-title-essence-size: 1.5rem;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-pc-title-decoracion-size"><h3 class="item__heading"><a class="item__name" href="#variable-pc-title-decoracion-size">pc-title-decoracion-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$pc-title-decoracion-size: 0.9rem;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-text-pc-size"><h3 class="item__heading"><a class="item__name" href="#variable-text-pc-size">text-pc-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$text-pc-size: 1rem;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-keyword-pc-size"><h3 class="item__heading"><a class="item__name" href="#variable-keyword-pc-size">keyword-pc-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$keyword-pc-size: 6.5rem;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-h2-pc-size"><h3 class="item__heading"><a class="item__name" href="#variable-h2-pc-size">h2-pc-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$h2-pc-size: 1.2rem;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-carousel-height-size"><h3 class="item__heading"><a class="item__name" href="#variable-carousel-height-size">carousel-height-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$carousel-height-size: 250px;</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#funciones-function-calcularAltura"><code>calcularAltura</code></a></li><li><span class="item__cross-type">[function]</span> <a href="#funciones-function-calcularAltura"><code>calcularAltura</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-icon-small-size"><h3 class="item__heading"><a class="item__name" href="#variable-icon-small-size">icon-small-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$icon-small-size: 15px;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-header-small-height-size"><h3 class="item__heading"><a class="item__name" href="#variable-header-small-height-size">header-small-height-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$header-small-height-size: 60px;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-header-small-width-size"><h3 class="item__heading"><a class="item__name" href="#variable-header-small-width-size">header-small-width-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$header-small-width-size: 100%;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-menu-small-height-size"><h3 class="item__heading"><a class="item__name" href="#variable-menu-small-height-size">menu-small-height-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$menu-small-height-size: 60px;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-small-title-essence-size"><h3 class="item__heading"><a class="item__name" href="#variable-small-title-essence-size">small-title-essence-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$small-title-essence-size: 1.1rem;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-small-title-decoracion-size"><h3 class="item__heading"><a class="item__name" href="#variable-small-title-decoracion-size">small-title-decoracion-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$small-title-decoracion-size: 0.7rem;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-small-profile-picture-size"><h3 class="item__heading"><a class="item__name" href="#variable-small-profile-picture-size">small-profile-picture-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$small-profile-picture-size: 50%;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-text-size"><h3 class="item__heading"><a class="item__name" href="#variable-text-size">text-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$text-size: .9rem;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-keyword-size"><h3 class="item__heading"><a class="item__name" href="#variable-keyword-size">keyword-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$keyword-size: 4rem;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="size-variable-h2-size"><h3 class="item__heading"><a class="item__name" href="#variable-h2-size">h2-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$h2-size: 1.2rem;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">SassDoc</span><!-- Version --><!-- License --></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>
