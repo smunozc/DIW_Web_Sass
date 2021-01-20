@@ -12,7 +12,7 @@
     width: 40% !important;
   }
   .card figure img {
-    width: 60% !important;
+    width: 50% !important;
   }
 }
 @media (min-width: 992px) {
@@ -91,7 +91,7 @@
     z-index: 1;
   }
   main .texto p {
-    font-size: 1rem !important;
+    font-size: 1.3rem !important;
     font-weight: lighter;
   }
   main .texto #keyword {
@@ -126,10 +126,10 @@
     margin-left: 30px;
   }
   .title .essence-word {
-    font-size: 1.5rem !important;
+    font-size: 1.8rem !important;
   }
   .title .decoracion-word {
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
   }
 }
 body,
@@ -288,7 +288,7 @@ a {
 }
 .container main .card figure img {
   padding: 5px;
-  width: 90%;
+  width: 60%;
 }
 .container main .card h2, .container main .card p, .container main .card a {
   margin: 0 10px;
